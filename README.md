@@ -31,7 +31,7 @@
 
 ```bash
 # 克隆專案
-git clone [repository-url]
+git clone https://github.com/eeelsa1/carousel_game.git
 cd carousel_game
 
 # 安裝依賴
