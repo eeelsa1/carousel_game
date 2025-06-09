@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自定義顏色 (可選，但能更精確匹配圖片) */
+/*
+@layer base {
+  :root {
+    --color-pastel-pink: #FFDDE1; // 圖片中的主粉色
+    --color-pastel-blue: #CDECF9; // 圖片中的主淺藍色
+    --color-pastel-green: #D7F7D2; // 圖片中的淺綠色
+    --color-cream: #FFF7ED; // 圖片中的米白色、奶油色
+    --color-soft-peach: #FFC0CB; // 更深的粉色
+    --color-mint: #A8E8D5; // 薄荷綠
+  }
+}
+*/
+
+body {
+  /* 柔和的漸層背景，模擬樂園地圖的底色 */
+  @apply bg-gradient-to-br from-yellow-50 to-pink-50 text-gray-700 font-sans; /* 更淺的基底色 */
+  /* 如果導入自定義顏色，可以使用 bg-[var(--color-cream)] 等 */
+}
+
+button {
+  @apply transform transition-transform duration-200 hover:scale-105 active:scale-95;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse-bright {
+  0%, 100% { filter: brightness(1); }
+  50% { filter: brightness(1.2); }
+}
+
+.animate-pulse-bright {
+  animation: pulse-bright 1.5s infinite;
+}
+
+@keyframes float-up-fade-out {
+    0% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px) scale(1.2);
+    }
+}
+
+.animate-float-up-fade-out {
+    animation: float-up-fade-out 1s ease-out forwards;
+}
+
+/* 額外添加一個輕微的陰影效果，模擬 3D 感 */
+.shadow-3d {
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1), 0px 8px 16px rgba(0,0,0,0.05);
+}
