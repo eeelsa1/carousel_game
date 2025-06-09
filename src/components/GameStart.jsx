@@ -93,10 +93,10 @@ export default function GameStart({
         className="text-4xl md:text-5xl font-extrabold text-pink-400 drop-shadow-lg mb-4 relative z-10"
         style={{ textShadow: "4px 4px 0px rgba(255,255,255,0.7)" }}
       >
-        甜蜜夢幻樂園 🎠
+        旋轉木馬轉轉樂 🎠
       </h1>
       <p className="text-lg md:text-xl text-gray-600 mb-6 relative z-10 font-semibold">
-        點擊開始，一起收集美味甜點星星吧！✨
+        點擊開始，一起收集美味甜點吧！✨
       </p>{" "}
       <div className="flex flex-col space-y-4 relative z-10 w-full max-w-md">
         {/* 遊戲時間選項 */}
